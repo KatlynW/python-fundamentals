@@ -64,7 +64,8 @@ print(left)
 # Basic class example
 class MyFirstClass:
     name = 'Roger'
-
+    
+    # This is a method instead of a function
     def something(self):
         print('Something')
 

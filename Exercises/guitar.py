@@ -37,3 +37,5 @@ class Guitar:
 my_guitar = Guitar("brown", "Cedar", 10)
 print(my_guitar.neck_size)
 print(my_guitar.string_vibrating_not_vibrating())
+my_guitar.neck_size = 20
+print(my_guitar.neck_size)

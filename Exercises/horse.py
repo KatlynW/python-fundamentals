@@ -97,3 +97,7 @@ print(horse1.endurance)
 print(horse1.racing_not_racing())
 print(horse2.strength)
 print(horse2.pulling_not_pulling())
+horse1.endurance = 12
+print(horse1.endurance)
+horse2.strength = 15
+print(horse2.strength)

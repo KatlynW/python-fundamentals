@@ -8,16 +8,25 @@
 # Put the functions for the example printing_models.py in a separate file called
 # printing_functions.py and modify the file to use the imported functions.
 import printing_function
-printing_function.testing_functions()
+def printing():
+    printing_function.testing_functions()
+
+
+printing()
+
 
 # 8 - 16 Imports
 # Using a program you wrote with one function in it, store that function in a separate
 # file. Import the file into the main program file and call it using different approaches.
-import printing_function
-from printing_function import testing_functions
-from printing_function import testing_functions as tn
-import printing_function as pf
-from printing_function import *
+def importing_items():
+    import printing_function
+    from printing_function import testing_functions
+    from printing_function import testing_functions as tn
+    import printing_function as pf
+    from printing_function import *
+
+
+importing_items()
 
 # 8 - 17 Styling Functions
 # Choose any of the 3 program written for the chapter and make sure they follow the
@@ -32,16 +41,29 @@ from printing_function import *
 # imports Restaurant. Make a Restaurant instance, and call one of Restaurant's methods to
 # show the import statement is working properly.
 import Restaurant
-restaurant1 = Restaurant.Restaurant("Taco Bell", "Fast Food")
-restaurant1.describe_restaurant()
+
+
+def import_rest():
+    restaurant1 = Restaurant.Restaurant("Taco Bell", "Fast Food")
+    restaurant1.describe_restaurant()
+
+
+import_rest()
+
 
 # 9 - 11 Imported Admin
 # Start with work from 9-8. Store classes User, Privileges, and Admin in one module.
 # Create a separate file, make an Admin instance and call show_privileges() to show
 # that everything is working.
 import usernamesfile
-admin1 = usernamesfile.Admin("John", "Snow", "God of War", "Male", usernamesfile.privileges2)
-usernamesfile.privileges2.show_privileges()
+
+
+def import_admin():
+    admin1 = usernamesfile.Admin("John", "Snow", "God of War", "Male", usernamesfile.privileges2)
+    usernamesfile.privileges2.show_privileges()
+
+
+import_admin()
 
 
 # 9 - 12 Multiple Modules
@@ -51,8 +73,14 @@ usernamesfile.privileges2.show_privileges()
 # I couldn't think of anything else to label them.
 import UserOnly
 import usernamedetailsminususer
-usernamedetailsminususer.Admin("John", "Doe", "Mystery", "Male", usernamedetailsminususer.privileges2)
-usernamedetailsminususer.privileges2.show_privileges()
+
+
+def multi_mod():
+    usernamedetailsminususer.Admin("John", "Doe", "Mystery", "Male", usernamedetailsminususer.privileges2)
+    usernamedetailsminususer.privileges2.show_privileges()
+
+
+multi_mod()
 
 
 # 3) 9 - 16 Python Module of the Week
